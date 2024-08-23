@@ -20,7 +20,6 @@ export default class App extends React.Component {
         }
       };
       axios.get("https://api.quotable.io/random", config).then((res)=>{
-        console.log(res.data)
         this.setState({
           quote: res.data.content
         });
